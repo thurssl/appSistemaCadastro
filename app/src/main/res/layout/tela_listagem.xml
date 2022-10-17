@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TelaListagemUsuarios">
+
+
+    <TextView
+        android:id="@+id/txtLstagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTAGEM DE USUÁRIOS"
+        android:textAlignment="center"
+        android:textSize="32sp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLstagem"
+        android:text="NOME:"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtNomee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNome"
+        android:layout_marginTop="5sp"
+        android:text="[nome]"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtEnde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNomee"
+        android:layout_marginTop="20sp"
+        android:text="ENDEREÇO:"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/txtEndere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEnde"
+        android:layout_marginTop="5sp"
+        android:text="[endereço]"
+        android:textSize="21sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtTELEF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEndere"
+        android:layout_marginTop="20sp"
+        android:text="TELEFONE:"
+        android:textSize="21sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txttele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTELEF"
+        android:text="[telefone]"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/gbotoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttele"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:text="Anterior"
+            android:textSize="20sp"
+
+            />
+
+        <Button
+            android:id="@+id/btnProximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Próximo"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gbotoes"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:text="Fechar"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@+id/txttele"
+        android:text=""
+        android:gravity="end" />
+
+</RelativeLayout>

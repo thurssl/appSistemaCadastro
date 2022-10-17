@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtfaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAÇA SEU CADASTRO "
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@color/cardview_dark_background"
+        />
+
+    <TextView
+        android:id="@+id/txtdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo ao Sistema de acadastro Esse é um pequeno
+  softwere de cadastro de usuário Escolha uma das opções abaixo "
+        android:layout_below="@+id/txtfaca"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btcadastrar_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdesc"
+        android:layout_marginTop="40dp"
+        android:text="Cadastro de Usuário"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/bt_listar_usuarios_cadastrados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btcadastrar_usuario"
+        android:layout_marginTop="10dp"
+        android:text="Lista de usuários cadastrados "
+        android:textSize="17sp"
+
+
+        />
+
+</RelativeLayout>

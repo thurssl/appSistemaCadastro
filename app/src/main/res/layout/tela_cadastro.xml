@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastroUsuario">
+
+    <TextView
+        android:id="@+id/txtCad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRO "
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOME COMPLETO: "
+        android:layout_below="@+id/txtCad"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/edtnome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNome"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/txtendereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENDEREÇO:"
+        android:layout_below="@+id/edtnome"
+        android:textColor="@color/black"
+        android:layout_marginTop="20sp"
+        android:textSize="17sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtendereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtendereco"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/txttelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TELEFONE:"
+        android:layout_below="@+id/edtendereco"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="20sp"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTelefone"
+        android:layout_below="@+id/txttelefone"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btncadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRAR"
+        android:layout_below="@+id/edtTelefone"
+        android:layout_marginTop="40sp"
+        android:textColor="@color/black"
+        android:background="@color/black"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/btncancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btncadas"
+        android:text="CANCELAR"
+        android:textColor="@color/black"
+        android:background="@color/black"
+        android:textSize="20dp"
+        android:width="0dp"
+        android:layout_marginTop="10sp"
+        />
+
+
+
+</RelativeLayout>
